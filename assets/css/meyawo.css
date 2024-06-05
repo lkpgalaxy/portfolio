@@ -54,7 +54,8 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -12181,6 +12182,11 @@ pre .code {
   margin-bottom: 15px;
 }
 
+.about-img {
+  border-radius: 25px;
+  border: 2px solid var(--indigo);
+}
+
 .about-caption {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -12231,4 +12237,21 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+.tech-icon {
+  width: 150px;
+  height: 100px;
+  transition: all ease-in-out 0.5s;
+}
+
+.tech-icon:hover {
+  scale: 1.5
+}
+
+.contact-me {
+  display: flex;
+  gap: 5px;
+  align-items:center;
+  justify-content: center;
 }
